@@ -1,0 +1,28 @@
+<div ng-style="myPageStyle">
+<h1 ng-style="myHeadingStyle" >Data Entry Page</h1>
+ <div ng-style="myTextStyle">
+Please braille the sentences you hear in the form field below. After each sentence, press the enter key on the keyboard. Once we have read you the very last sentence, we will ask you to press the 'All done' button. Please do not click that button until we ask you to do so, since this will end the experiment.
+ </div>
+<label for="brlEditBox" ng-style="myTextStyle" >Braille the sentences</label>
+<textarea ng-style="myEditStyle"  id="brlEditBox" ng-keydown="getkeysd($event)" ng-keyup="getkeysu($event)" ng-model="brlcontent" ng-init="focusMe()" ></textarea>
+<div style="myHiddenStyle">
+<form action="pages/confirm.php" method="post" id="form1">
+<input type="hidden" name="filename" ng-model="fileName" value="{{fileName}}">
+<input type="hidden" name="receiveddata" ng-model="receivedData" ng-init="receivedData =1 " value="{{receivedData}}">
+<input type="hidden" name="receivedtext" ng-model="receivedText" ng-init="receivedText =1 " value="{{receivedText}}">
+</form>
+</div>
+<div ng-style="myButtonContainerStyle" >
+<button ng-style="myButtonStyle" role="button" onclick="showDialog()">All done</button>
+</div>
+<div ng-style="myDialogStyle" role="dialog" id="myDialog">
+  <h3>Confirmation question</h3>
+  <textarea ng-style="myDialogEditStyle" readonly="true" id="myDialogContent" tabindex="1" >
+Are you sure you wish to end the study?
+  </textarea>
+<button id="myDialogOk" tabindex="2" type="submit" form="form1" ng-style="myButtonYesStyle" > <strong>Yes</strong> <br/> Exit the study now.</button>
+<button id="cancelDialog" tabindex="3" ng-style="myButtonNoStyle" onclick="closeDialog()" ><strong>No!</strong></br> Go back to the entry page.</button>		
+</div>
+</div>
+
+</div>

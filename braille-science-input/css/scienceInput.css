@@ -1,0 +1,66 @@
+.myPageClass {
+ color:black;
+  backgrounolor : "blue;
+  left-margin:40px;
+}
+
+.myTextClass {
+ color:black;
+  background-color:blue;
+  font-size:20px;
+  padding : 50px;
+}
+
+ .myEditClass {
+ background-color:white;
+ color: black;
+ font-size : 35px;
+ padding : 50px;
+ left-margin : 30px;
+ height : 400px;
+ width : 500px;
+ }
+
+ .myButtonClass {
+ color : black;
+ font-size : 30px;
+ top-margin : 20px;
+ bottom-margin : 20px;
+ left-margin : 30px;
+ right-margin : 20px;
+ padding : 50px;
+ }
+
+.myClass {
+  left-margin:40px;
+  background-color:'green';
+  text-color:'red';
+  font-size:30px;
+}
+
+@font-face{
+  font-family: 'brailleDeComputer';
+  //src: url('../fonts/BrDEComp.ttf');
+  src: url('../fonts/BRLKIAMA.TTF');
+  format: 'truetype';
+}
+ 
+#brlEditBox {
+  background-color: white;
+  height: 500px;
+  length: 500px;
+  font-family: 'brailleDeComputer'; 
+  font-size: 18px;
+}
+
+#brailleEdit{
+  height: 500px;
+  length: 260px;
+  font-family: 'brailleDeComputer'; 
+  font-size: 32pt;
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}

@@ -1,0 +1,22 @@
+<div ng-style="myPageStyle">
+  <h1 ng-style="myHeadingStyle">Braille Writing Study</h1>
+  <div ng-controller="scienceInputController as scienceInput" >
+    <ul class="unstyled" ng-style="myTextStyle">
+      <li>
+        <legend ng-style="myTextStyle" ><strong>Please select what type of font you wish to use.</strong></legend>
+  <label ng-style="myTextStyle" >Braille:&nbsp;&nbsp;<input type="radio" name="fontType" ng-model="fontType" value="brailleFont" ></input></label>
+          <label ng-style="myTextStyle" >Print (ASCII braille):&nbsp;&nbsp;<input type="radio" name="fontType" ng-model="fontType" value="asciiFont"></input></label>
+      </li>
+      <li>
+        <legend ng-style="myTextStyle" ><strong>Please select the type of keyboard you will be using.</strong></legend>
+          <label ng-style="myTextStyle" >6-key Braille input on a QWERTY keyboard (SDF JKL keys):&nbsp;&nbsp;<input type="radio" name="keyboardType" ng-model="keyboardType" value="querty"></input></label>
+          <label ng-style="myTextStyle" >Externally connected Braille keyboard, Braille display, or Notetaker:&nbsp;&nbsp;<input type="radio" name="keyboardType" ng-model="keyboardType" value="braille"></input></label>
+       </li>
+      </ul>
+        <input type="text" ng-model="subjectID" ng-style="myTextStyle" size="30"
+       placeholder="Please type your subject ID number here."></input>
+   <div ng-style="myButtonContainerStyle">
+  <input type="button" ng-click="startWritingData()" ng-style="myButtonStyle" value="Press this button to move to the next page and begin the study."></input>
+   </div>
+</div>
+</div>
