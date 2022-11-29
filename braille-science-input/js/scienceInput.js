@@ -139,7 +139,7 @@ var brlSigns =new Array(
     new Array('y',103456),
     new Array('z',103056),
     new Array('&',123406),
-    new Array('%',123456),
+    new Array('=',123456),
     new Array('(',123056),
     new Array('!',23406),
     new Array(')',23456),
